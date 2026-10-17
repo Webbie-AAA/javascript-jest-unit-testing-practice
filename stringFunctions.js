@@ -32,16 +32,20 @@ function isSubstring(word, match){
         throw new Error("Arguments must have a length greater than zero!")
     } 
 
-    for (let i=0; i<word.length; i++){
-        let exact_match = ''
-        let letter_of_word = word[i]
-        console.log(letter_of_word)
-        //Turn a string in an array
-        // for loop match the run of the indexes. 
+    let length_of_word = word.length;
+    let length_of_match = match.length;
 
 
+    for (let i=0, j=length_of_match; j<length_of_word+1; i++, j++){
+        if (word.slice(i, j) == match){
+            return true;
+            }
+            
+        }
+        return false;
     }
-}
 
 
 module.exports = {getLonger, greet, isSubstring};
+
+

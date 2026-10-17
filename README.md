@@ -1,64 +1,76 @@
-# Passing tests
+# JavaScript Fundamentals | Jest Testing
 
-Practice of your testing knowlege and JavaScript coding skills by analysing an existing test suite & writing functions to ensure the successful passage of all tests. 
+My first introduction to unit testing with **Jest**, exploring JavaScript fundamentals through a test-driven approach to problem-solving.
 
-## Organisation
+This project involved analysing existing test suites, interpreting the expected behaviour of different functions, and independently implementing solutions to satisfy the test requirements.
 
-### Duration
+All function implementations are my own.
 
-You have **2 hours** to make as much progress on this task as possible.
+## Project Overview
 
-### Team
+The repository contains two JavaScript modules:
 
-Pairs of students 
+- `numberFunctions.js` — Functions focused on numerical operations and logic.
+- `stringFunctions.js` — Functions focused on string manipulation and related problem-solving.
 
-### Set-up
+The project consists of **2 test suites containing 60 tests**, providing an opportunity to practise JavaScript fundamentals while developing an understanding of automated testing.
 
-**Run** `npm install` from this folder to install all necessary libraries.
+Rather than being provided with function implementations, I worked backwards from the tests to determine the expected behaviour and requirements of each function.
 
-## Interpersonal Skills
+## Development Approach
 
-Testing is a crucial aspect of writing quality code and being proactive in delivering robust software. This section explores how testing connects to being proactive and the importance of taking the initiative in ensuring that your code is thoroughly tested before it reaches production.
+This was my first experience using Jest and introduced me to the **Red–Green–Refactor** development cycle.
 
-Testing is an essential skill in software development, and adopting a proactive approach to it ensures that your code is reliable, maintainable, and scalable. Rather than waiting for issues to arise, proactively writing tests for your code can help catch bugs early, improve the quality of your work, and prevent larger problems down the line when refactoring. Here's how testing ties into taking initiative and writing good code:
+My approach involved:
 
-- **Writing comprehensive test cases by proactively creating tests**
-  - Developers ensure that their code functions as expected and meets the requirements. Unit tests, integration tests, and end-to-end tests help cover various aspects of the codebase to identify potential issues early.
+1. **Analysing the tests** — Reading the test cases and interpreting their assertions to understand the expected behaviour of each function.
+2. **Implementing solutions** — Independently writing JavaScript functions based on the requirements identified through the tests.
+3. **Running the tests** — Using Jest to evaluate my implementations, identify failures and understand where adjustments were needed.
+4. **Debugging and refactoring** — Revisiting my logic, addressing edge cases and refining implementations to satisfy the test cases.
 
-- **Automating the testing process**
-  - Automated testing helps maintain consistency, reduces the risk of human error, and ensures that tests are run frequently throughout development.
+This process encouraged me to approach problems methodically, consider different input scenarios and develop a better understanding of how automated testing supports reliable software development.
 
-- **Debugging and improving code quality**
-  - Testing encourages developers to identify edge cases and potential failures, fostering a mindset of writing more resilient code.
-  - Proactive testing uncovers potential weaknesses or flaws in the code that can be addressed before they become larger issues in production.
+## Results and Key Learnings
 
-- **Collaboration with quality in mind**
-  - Testing encourages a culture of quality, where developers collaborate to ensure the code they contribute is not only functional but also thoroughly tested and error-free. 
+**2 test suites | 60 tests**
 
-### Interpersonal Skills during Projects
+Through this project, I gained practical experience in:
 
-Whilst practicing these skills keep in mind, these are developing the behaviours and techniques we expect you to use whilst in your teams during both projects. 
+- Interpreting existing unit tests to establish functional requirements.
+- Writing JavaScript functions independently from expected behaviour.
+- Understanding Jest assertions and interpreting test failures.
+- Debugging logical errors and handling edge cases.
+- Implementing input validation and appropriate error handling.
+- Applying the Red–Green–Refactor development cycle.
+- Strengthening my analytical thinking and problem-solving skills.
 
-## Brief
+## Getting Started
 
-This folder contains a `package.json` set-up to run unit tests on code files. At the moment, the tests are all failing as the code files - and the functions that should be in them - do not exist.
+Install the project dependencies:
 
-Your task is to make the tests pass by implementing the necessary functions in the following files:
-- `numberFunctions.js`
-- `stringFunctions.js`
+```bash
+npm install
+```
 
-This will involve navigating an unfamiliar project, research, and using existing knowledge of Javascript syntax.
+Run the Jest test suites:
 
-## Guidance
+```bash
+npm test
+```
 
-- You will need to write code within existing files to complete this task
-- Do not edit the test files or the `package.json`
-- There are NPM scripts that will run the tests (wholly or partially)
-- Start by working on the tests in `numberFunctions.js`; the ones in `stringFunctions.js` are harder
-- Reading the test code might be helpful, but it's not required - the console output from the tests should be able to guide you
-- You may need to do some research to get the string tests to pass
+## Technologies Used
 
-## Resources
+- JavaScript
+- Node.js
+- Jest
+- npm
 
-- [Throwing errors - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
-- [Jest documentation](https://jestjs.io/)
+## Development Context
+
+The project began as a paired learning activity, with collaboration during the initial stages. I independently developed all function implementations and completed the remaining work individually.
+
+The existing test suites provided the requirements, whilst the solutions and implementation decisions were entirely my own.
+
+---
+
+*This project originated from a JavaScript testing exercise undertaken during my training at La Fosse Academy. The original test suites were provided as part of the programme; all function implementations are my own.*
